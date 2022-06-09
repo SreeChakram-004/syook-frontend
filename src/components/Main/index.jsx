@@ -56,7 +56,7 @@ const Main = () => {
 
 			<div>
         <Divider />
-		{vote}
+		     <h1>{vote}</h1>
 			<Card.Group doubling itemsPerRow={3} stackable>
           {_.map(cards, (card) => (
             <Card key={card.header}>

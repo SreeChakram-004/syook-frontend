@@ -59,14 +59,14 @@ const Main = () => {
 		     <h1>{vote}</h1>
 			<Card.Group doubling itemsPerRow={3} stackable>
           {_.map(cards, (card) => (
-            <Card key={card.header}>
+            <Card key={card.id}>
               {loading ? (
                 <Placeholder>
                   <Placeholder.Image square />
                 </Placeholder>
               ) : (
                 // <Image src={`https://robohash.org/${card.id}?set=set2&size=180x180`} />
-				<Image src={card.image} />
+				<Image src={`https://loremflickr.com/320/240/food?random=${card.id}`} />
               )}
 
               <Card.Content>
